@@ -1,0 +1,127 @@
+[
+  {
+    "name": "AIM-9 Sidewinder",
+    "model_number": "AIM-9X",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "AIM-120 AMRAAM",
+    "model_number": "AIM-120D",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "AGM-65 Maverick",
+    "model_number": "AGM-65G",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "AGM-88 HARM",
+    "model_number": "AGM-88E AARGM",
+    "manufacturer": "Northrop Grumman"
+  },
+  {
+    "name": "AGM-158 JASSM",
+    "model_number": "AGM-158B",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "GBU-39 Small Diameter Bomb (SDB)",
+    "model_number": "GBU-39/B",
+    "manufacturer": "Boeing"
+  },
+  {
+    "name": "GBU-53/B StormBreaker (SDB II)",
+    "model_number": "GBU-53/B",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "Minuteman III",
+    "model_number": "LGM-30G",
+    "manufacturer": "Boeing"
+  },
+  {
+    "name": "Patriot Missile (PAC-3)",
+    "model_number": "MIM-104F",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "THAAD",
+    "model_number": "MIM-104F (THAAD Interceptor)",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "Tomahawk",
+    "model_number": "BGM-109",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "Javelin",
+    "model_number": "FGM-148",
+    "manufacturer": "Raytheon/Lockheed Martin"
+  },
+  {
+    "name": "Stinger",
+    "model_number": "FIM-92",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "Hellfire",
+    "model_number": "AGM-114R",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "AIM-7 Sparrow",
+    "model_number": "AIM-7M",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "Harpoon",
+    "model_number": "AGM-84",
+    "manufacturer": "Boeing"
+  },
+  {
+    "name": "SLAM-ER",
+    "model_number": "AGM-84H/K",
+    "manufacturer": "Boeing"
+  },
+  {
+    "name": "Griffin",
+    "model_number": "AGM-176",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "Joint Air-to-Surface Standoff Missile - Extended Range (JASSM-ER)",
+    "model_number": "AGM-158C",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "Long Range Anti-Ship Missile (LRASM)",
+    "model_number": "AGM-158C-ER",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "AGM-154 Joint Standoff Weapon",
+    "model_number": "AGM-154C",
+    "manufacturer": "Raytheon"
+  },
+  {
+    "name": "GBU-31 Joint Direct Attack Munition",
+    "model_number": "GBU-31(V)3/B",
+    "manufacturer": "Boeing"
+  },
+  {
+    "name": "AIM-260 JATM",
+    "model_number": "AIM-260",
+    "manufacturer": "Lockheed Martin"
+  },
+  {
+    "name": "Hypersonic Attack Cruise Missile",
+    "model_number": "HACM",
+    "manufacturer": "Raytheon/Northrop Grumman"
+  },
+  {
+    "name": "Standard Missile 6",
+    "model_number": "RIM-174",
+    "manufacturer": "Raytheon"
+  }
+]
