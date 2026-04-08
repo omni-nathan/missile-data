@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://your-zuplo-gateway.zuplo.io",
+      "url": "https://missile-data-main-d360494.d2.zuplo.dev",
       "description": "Production Environment"
     }
   ],
