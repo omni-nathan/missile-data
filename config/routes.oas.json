@@ -1,30 +1,100 @@
-{
-  "openapi": "3.1.0",
-  "info": {
-    "version": "1.0.0",
-    "title": "USAF Missiles"
-  },
-  "paths": {
-    "/missiles": {
-      "x-zuplo-path": {
-        "pathMode": "open-api"
-      },
-      "get": {
-        "summary": "New Route",
-        "description": "Pulls specific missiles by manufacturer",
-        "x-zuplo-route": {
-          "corsPolicy": "none",
-          "handler": {
-            "export": "default",
-            "module": "$import(./modules/missiles)",
-            "options": {}
-          },
-          "policies": {
-            "inbound": []
-          }
-        },
-        "operationId": "new-route-42ad0010"
-      }
-    }
-  }
-}
+openapi: 3.0.0
+info:
+  title: USAF Missiles API
+  description: >
+    A comprehensive API for accessing data on United States Air Force missile systems. 
+    This API supports filtering by manufacturing origin and functional classification.
+  version: 1.1.0
+
+servers:
+  - url: https://your-zuplo-gateway.zuplo.io
+    description: Production Environment
+
+paths:
+  /missiles:
+    get:
+      summary: List and Filter Missiles
+      description: |
+        Returns a list of missiles. Use query parameters to narrow down the results 
+        based on the manufacturer or the missile's operational type.
+      operationId: get-missiles
+      parameters:
+        - name: manufacturer
+          in: query
+          description: >
+            The primary contractor responsible for the missile's production.
+            Example: `Raytheon`, `Lockheed Martin`, or `Boeing`.
+          required: false
+          schema:
+            type: string
+        - name: type
+          in: query
+          description: >
+            The functional category of the missile.
+            Common values include `Air-to-Air`, `Air-to-Surface`, or `Surface-to-Air`.
+          required: false
+          schema:
+            type: string
+            enum: [Air-to-Air, Air-to-Surface, Surface-to-Air, Cruise]
+      responses:
+        '200':
+          description: A successful retrieval of the missile list.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Missile'
+        '400':
+          description: Invalid query parameters provided.
+
+  /missiles/{id}:
+    get:
+      summary: Get Missile by ID
+      description: Returns the full details of a single missile record using its unique slug or ID.
+      operationId: get-missile-by-id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The unique identifier for the missile (e.g., `aim-9x`).
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detailed missile information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Missile'
+        '404':
+          description: Missile not found.
+
+components:
+  schemas:
+    Missile:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+          description: Unique slug-style identifier.
+          example: "aim-120d"
+        name:
+          type: string
+          description: The official military designation and name.
+          example: "AIM-120D AMRAAM"
+        manufacturer:
+          type: string
+          description: The company that manufactures the system.
+          example: "Raytheon"
+        type:
+          type: string
+          description: The operational classification.
+          example: "Air-to-Air"
+        range:
+          type: string
+          description: The effective operational range of the missile.
+          example: "160 km"
