@@ -1,16 +1,15 @@
 import { ZuploContext, ZuploRequest } from "@zuplo/runtime";
-// Importing the local JSON file containing the missile data
 import missiles from "../missiles.json";
 
 export default async function (request: ZuploRequest, context: ZuploContext) {
-  /**
-   * Log the request for visibility in the Zuplo portal.
-   */
-  context.log.info(`Fetching missile data list.`);
+  const { searchParams } = new URL(request.url);
+  const manufacturer = searchParams.get("manufacturer");
 
-  /**
-   * Return the missile data as a JSON response. 
-   * Zuplo automatically sets the content-type to application/json.
-   */
+  if (manufacturer) {
+    return missiles.filter(m => 
+      m.manufacturer.toLowerCase().includes(manufacturer.toLowerCase())
+    );
+  }
+
   return missiles;
 }
