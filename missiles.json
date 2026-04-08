@@ -2,126 +2,97 @@
   {
     "name": "AIM-9 Sidewinder",
     "model_number": "AIM-9X",
-    "manufacturer": "Raytheon"
+    "manufacturer": "Raytheon",
+    "type": "Air-to-Air",
+    "range": "35 km",
+    "speed": "Mach 2.5+"
   },
   {
     "name": "AIM-120 AMRAAM",
     "model_number": "AIM-120D",
-    "manufacturer": "Raytheon"
-  },
-  {
-    "name": "AGM-65 Maverick",
-    "model_number": "AGM-65G",
-    "manufacturer": "Raytheon"
-  },
-  {
-    "name": "AGM-88 HARM",
-    "model_number": "AGM-88E AARGM",
-    "manufacturer": "Northrop Grumman"
+    "manufacturer": "Raytheon",
+    "type": "Beyond Visual Range Air-to-Air",
+    "range": "160 km",
+    "speed": "Mach 4"
   },
   {
     "name": "AGM-158 JASSM",
     "model_number": "AGM-158B",
-    "manufacturer": "Lockheed Martin"
-  },
-  {
-    "name": "GBU-39 Small Diameter Bomb (SDB)",
-    "model_number": "GBU-39/B",
-    "manufacturer": "Boeing"
-  },
-  {
-    "name": "GBU-53/B StormBreaker (SDB II)",
-    "model_number": "GBU-53/B",
-    "manufacturer": "Raytheon"
-  },
-  {
-    "name": "Minuteman III",
-    "model_number": "LGM-30G",
-    "manufacturer": "Boeing"
-  },
-  {
-    "name": "Patriot Missile (PAC-3)",
-    "model_number": "MIM-104F",
-    "manufacturer": "Lockheed Martin"
-  },
-  {
-    "name": "THAAD",
-    "model_number": "MIM-104F (THAAD Interceptor)",
-    "manufacturer": "Lockheed Martin"
+    "manufacturer": "Lockheed Martin",
+    "type": "Air-to-Surface Cruise Missile",
+    "range": "925 km",
+    "speed": "Subsonic"
   },
   {
     "name": "Tomahawk",
     "model_number": "BGM-109",
-    "manufacturer": "Raytheon"
+    "manufacturer": "Raytheon",
+    "type": "Long-range Cruise Missile",
+    "range": "1,600 km",
+    "speed": "880 km/h"
   },
   {
     "name": "Javelin",
     "model_number": "FGM-148",
-    "manufacturer": "Raytheon/Lockheed Martin"
+    "manufacturer": "Raytheon/Lockheed Martin",
+    "type": "Man-portable Anti-tank",
+    "range": "2.5 km - 4.7 km",
+    "speed": "187 m/s"
   },
   {
-    "name": "Stinger",
-    "model_number": "FIM-92",
-    "manufacturer": "Raytheon"
+    "name": "Meteor",
+    "model_number": "BVRAAM",
+    "manufacturer": "MBDA",
+    "type": "Beyond Visual Range Air-to-Air",
+    "range": "200 km+",
+    "speed": "Mach 4+"
   },
   {
-    "name": "Hellfire",
-    "model_number": "AGM-114R",
-    "manufacturer": "Lockheed Martin"
+    "name": "BrahMos",
+    "model_number": "PJ-10",
+    "manufacturer": "BrahMos Aerospace",
+    "type": "Supersonic Cruise Missile",
+    "range": "290 km - 500 km",
+    "speed": "Mach 3"
   },
   {
-    "name": "AIM-7 Sparrow",
-    "model_number": "AIM-7M",
-    "manufacturer": "Raytheon"
+    "name": "Patriot",
+    "model_number": "MIM-104",
+    "manufacturer": "Raytheon",
+    "type": "Surface-to-Air Defense",
+    "range": "70 km - 160 km",
+    "speed": "Mach 4.1"
   },
   {
     "name": "Harpoon",
     "model_number": "AGM-84",
-    "manufacturer": "Boeing"
+    "manufacturer": "Boeing",
+    "type": "Anti-ship Missile",
+    "range": "124 km - 280 km",
+    "speed": "864 km/h"
   },
   {
-    "name": "SLAM-ER",
-    "model_number": "AGM-84H/K",
-    "manufacturer": "Boeing"
+    "name": "Storm Shadow",
+    "model_number": "SCALP EG",
+    "manufacturer": "MBDA",
+    "type": "Long-range Cruise Missile",
+    "range": "550 km",
+    "speed": "Mach 0.8"
   },
   {
-    "name": "Griffin",
-    "model_number": "AGM-176",
-    "manufacturer": "Raytheon"
+    "name": "Zircon",
+    "model_number": "3M22",
+    "manufacturer": "NPO Mashinostroyeniya",
+    "type": "Hypersonic Cruise Missile",
+    "range": "1,000 km",
+    "speed": "Mach 9"
   },
   {
-    "name": "Joint Air-to-Surface Standoff Missile - Extended Range (JASSM-ER)",
-    "model_number": "AGM-158C",
-    "manufacturer": "Lockheed Martin"
-  },
-  {
-    "name": "Long Range Anti-Ship Missile (LRASM)",
-    "model_number": "AGM-158C-ER",
-    "manufacturer": "Lockheed Martin"
-  },
-  {
-    "name": "AGM-154 Joint Standoff Weapon",
-    "model_number": "AGM-154C",
-    "manufacturer": "Raytheon"
-  },
-  {
-    "name": "GBU-31 Joint Direct Attack Munition",
-    "model_number": "GBU-31(V)3/B",
-    "manufacturer": "Boeing"
-  },
-  {
-    "name": "AIM-260 JATM",
-    "model_number": "AIM-260",
-    "manufacturer": "Lockheed Martin"
-  },
-  {
-    "name": "Hypersonic Attack Cruise Missile",
-    "model_number": "HACM",
-    "manufacturer": "Raytheon/Northrop Grumman"
-  },
-  {
-    "name": "Standard Missile 6",
-    "model_number": "RIM-174",
-    "manufacturer": "Raytheon"
+    "name": "Hellfire",
+    "model_number": "AGM-114R",
+    "manufacturer": "Lockheed Martin",
+    "type": "Air-to-Ground Tactical",
+    "range": "8 km",
+    "speed": "Mach 1.3"
   }
 ]
